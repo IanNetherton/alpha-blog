@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlphaBlog</title>
+<style>
+#header {
+    position: relative;
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+img {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    border: 2px solid #73AD21;
+    height:80%;
+
+}
+nav {
+    position: relative;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    position: relative;
+    border: 1px solid #153F4D;
+    position: relative;
+    left: 30px;
+    width: 500px;
+    margin: auto;
+    padding:10px;
+}
+footer {
+    position: relative;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    bottom: 0px;
+}
+</style>
+
+</head>
+<body>
+  <%= link_to image_tag('tonemapped.jpg') %>
+  <h1 id="header">This is the Home of Alpha-Blog</h1>
+
+<nav>
+<%= link_to 'Home', root_path %><br>
+<%= link_to 'About', about_path %><br>
+</nav>
+
+<p id="section">
+  On Saturdays we go to the park.
+</p>
+
+<p id="section">
+  On Sundays we go to the Zoo
+</p>
+
+
+</body>
+<footer>
+Copyright Ian Netherton
+</footer>
+</html>
+
